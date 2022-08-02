@@ -1,0 +1,1 @@
+zip -r filename.zip folder

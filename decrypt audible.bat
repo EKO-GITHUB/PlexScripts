@@ -1,0 +1,1 @@
+ffmpeg\bin\ffmpeg -y -activation_bytes 67ec070b -i encryptedbook.aax -ab 320k -vn audiobook.mp3

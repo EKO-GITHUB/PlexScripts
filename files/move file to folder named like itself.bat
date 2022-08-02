@@ -1,0 +1,1 @@
+for %i in (*) do move "%i" "%~ni"

@@ -1,0 +1,19 @@
+ORDER OF REBOOT STEPS:
+START TAUTULLI IN SCREEN:
+	screen -S plexpy
+	cd /opt/Tautulli
+	./start.sh
+START QBIT:
+	screen -S qbit
+	qbittorrent-nox
+START RADARR:
+	screen -S radarr
+	cd /opt/Radarr
+	./Radarr
+START JACKETT
+	screen -S jackett
+	cd /opt/Jackett
+	./jackett
+RCLONE START MOUNT:
+	screen -S cache
+	rclone mount --allow-other --verbose --drive-chunk-size=128M --dir-cache-time=336h --cache-chunk-path=/data/.gdrive-cache/ --cache-chunk-size=128M  --cache-chunk-total-size=200G --cache-info-age=1344h --write-back-cache --cache-tmp-upload-path=/data/.tmp-upload --cache-tmp-wait-time=1h --tpslimit 8 --vfs-cache-mode writes "drive:EKO" /mnt/Cache

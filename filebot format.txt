@@ -1,0 +1,2 @@
+Anime/{n}/{n} - Season {S00}/{n} {S00e00} {t.take(40)}
+{show_name} {season_num00}{episode_num00} {episode_name}

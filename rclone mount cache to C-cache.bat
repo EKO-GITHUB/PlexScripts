@@ -1,0 +1,2 @@
+ECHO OFF
+start /D "C:\Program Files (x86)\rclone" rclone.exe mount --drive-chunk-size=128M --dir-cache-time=336h --cache-chunk-path=C:\Users\Ekofisk\.rclone\.gdrive-cache --cache-chunk-size=128M  --cache-chunk-total-size=200G --cache-info-age=1344h --write-back-cache --cache-tmp-upload-path=C:\Users\Ekofisk\.rclone\.tmp-upload --cache-tmp-wait-time=1h --tpslimit 8 --vfs-cache-mode full "drive:" C:\cache
